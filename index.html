@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta>
+        <title>MoveMate - Transportation App</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                MoveMate
+            </h1>
+            <p><em>
+                Your Trusted Mate on Every Ride
+            </em></p>
+            <nav>
+                <a href="#book">Book a Ride</a> |
+                <a href="#fleet">Our Vehicles</a> |
+                <a href="#map">Map</a> |
+                <a href="#media">Media</a> |
+                <a href="#schedule">Schedule</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section id="book">
+            <h2>
+            <form action="#" method="post">
+            <fieldset>
+            <legend>
+                Trip Details
+            </legend>
+            <p>
+                <label for="fullname">Full name: </label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter you'r Full name"><br>                    
+            </p>
+            <p>
+                <label for="Phonenumber">Phone number: </label><br>
+                <input type="tel" id="Phonenumber" name="phonenumber" placeholder="09XX XXX XXXX"><br>
+            </p> 
+            <p>
+                <label for="email">Email: </label><br>
+                <input type="email" id="Email" name="email" placeholder="Enter your email"><br>
+            </p>
+            <p>
+                <label for="Pick-up">Pick-up: </label><br>
+                <input type="text" id="Pick-up" name="Pick-up" list="places"><br>
+                <datalist id="places">
+                    <option value="Central Terminal">
+                    <option value="City Hall">
+                    <option value="Airport">
+                    <option value="University Campus">
+                    <option value="Public Market">
+                </datalist>
+            </p>
+            <p>
+                <label for="Drop-off">Drop-off: </label><br>
+                <input type="text" id="Drop-off" name="Drop-off" list="places"><br>
+                <datalist id="places">
+                    <option value="Central Terminal">
+                    <option value="City Hall">
+                    <option value="Airport">
+                    <option value="University Campus">
+                    <option value="Public Market">
+                </datalist>
+            </p>
+            <p>
+                <label for="Date">Date: </label>
+                <input type="date" id="Date" name="Date" >
+                <label for="Time">Time: </label>
+                <input type="time" id="Time" name="Time" ><br>
+            </p>
+            <p>
+                <label for="Passengers">Passengers: </label><br>
+                <input type="text" id="Passengers" name="Passengers" min="1" max="10" value="1"><br>
+            </p>
+            <p>
+                <label for="Vehicle type">Vehicle type: </label><br>
+                <select>
+                    <option value="Taxi">Taxi</option>
+                    <option value="Van">Van</option>
+                    <option value="Shuttle Bus">Shuttle Bus</option>
+                    <option value="Motorcycle Taxi">Motorcycle Taxi</option>
+                    <option value="Tricycle">Tricycle</option>
+                </select>
+            </p>
+            <p>
+                <span>Payment Method:</span><br>
+
+                <input type="radio" id="cash" name="payment" value="cash" checked>
+                <label for="cash">Cash</label>
+      
+                <input type="radio" id="card" name="payment" value="card">
+                <label for="card">Card</label>
+      
+                <input type="radio" id="ewallet" name="payment" value="ewallet">
+                <label for="ewallet">E-Wallet</label>
+            </p>
+            <p>
+                <span>Extras: </span><br>
+
+                <input type="checkbox" id="luggage" name="extras" value="extra-luggage">
+                <label for="luggage">Extra luggage</label><br>
+      
+                <input type="checkbox" id="child-seat" name="extras" value="child-seat">
+                <label for="child-seat">Child seat</label><br>
+      
+                <input type="checkbox" id="wheelchair" name="extras" value="wheelchair-accessible">
+                <label for="wheelchair">Wheelchair accessible</label><br>
+              </p>
+      
+              <p>
+                <label for="notes">Notes for the driver:</label><br>
+                <textarea id="notes" name="notes" rows="5" cols="40"
+                          placeholder="Enter any notes for the driver"></textarea>
+              </p>
+      
+              <p>
+                <input type="checkbox" id="terms" name="terms" value="agree" required>
+                <label for="terms">I agree to the <a href="#terms-info">Terms &amp; Conditions</a>
+                </label>
+              </p>
+      
+              <p>
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear</button>
+              </p>
+            </fieldset>
+            </form>
+            </h2>
+            </section>
+            
+            <hr>
+
+            <section id="fleet">
+                <h2>Our Vehicles</h2>
+              
+                <figure>
+                  <img src="taxi.jpeg"
+                       alt="Taxi vehicle"
+                       width="400"
+                       height="250">
+                  <figcaption>
+                    <strong>Taxi</strong> - A comfortable and convenient option for quick city trips.
+                  </figcaption>
+                </figure>
+              
+                <figure>
+                  <img src="van.jpg"
+                       alt="Passenger van"
+                       width="400"
+                       height="250">
+                  <figcaption>
+                    <strong>Van</strong> - Spacious transportation for families and small groups.
+                  </figcaption>
+                </figure>
+              
+                <figure>
+                  <img src="shuttlebus.jpg"
+                       alt="Shuttle bus"
+                       width="400"
+                       height="250">
+                  <figcaption>
+                    <strong>Shuttle Bus</strong> - Ideal for transporting larger groups comfortably.
+                  </figcaption>
+                </figure>
+              
+                <small>
+                  Note: The placeholder images can be replaced with real vehicle photos.
+                </small>
+                <hr>
+              </section>
+              <section id="map">
+                <h2>Find Our Stops</h2>
+              
+                <p>
+                  Use the map below to find our transportation stops and plan your journey.
+                </p>
+
+              
+                <p>
+                  <a
+                    href="https://www.openstreetmap.org/?mlat=14.6507&amp;mlon=121.0494#map=15/14.6507/121.0494"
+                    target="_blank"
+                    rel="noopener">
+                    View larger map
+                  </a>
+                </p>
+              
+                <h3>Image Map: Route Overview</h3>
+              
+                <img
+                  src="therminal.jpg"
+                  alt="Route overview showing Terminal, City Hall, and Airport stops"
+                  width="600"
+                  height="250"
+                  usemap="#routemap">
+                <br>
+                <img
+                  src="cityhall.jpg"
+                  alt="Route overview showing Terminal, City Hall, and Airport stops"
+                  width="600"
+                  height="250"
+                  usemap="#routemap">
+                <br>
+                <img
+                  src="airport stop.jpg"
+                  alt="Route overview showing Terminal, City Hall, and Airport stops"
+                  width="600"
+                  height="250"
+                  usemap="#routemap">
+    
+              
+                <hr>
+              </section>
+              <section id="media">
+                <h2>Media</h2>
+              
+                <h3>How MoveMate Works (Video)</h3>
+              
+                <video width="480" controls poster="https://placehold.co/480x270?text=MoveMate+Video">
+                  <source src="videotransportation.mp4" type="video/mp4">
+                  <source src="videotransportation.ogg" type="video/ogg">
+                  Your browser does not support the video element.
+                </video>
+              
+                <h3>Driver Announcement (Audio)</h3>
+              
+                <audio controls>
+                  <source src="transportadsaudio.mp3" type="audio/mpeg">
+                  <source src="transportadsaudio.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              
+                <h3>Watch on YouTube (Embedded)</h3>
+              
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="MoveMate transportation video"
+                  allowfullscreen>
+                </iframe>
+              
+                <hr>
+              </section>
+              <section id="schedule">
+                <h2>Shuttle Schedule</h2>
+              
+                <table border="1" cellpadding="6" cellspacing="0">
+                  <caption>Daily departures from Central Terminal</caption>
+              
+                  <thead>
+                    <tr>
+                      <th>Route</th>
+                      <th>Departure</th>
+                      <th>Arrival</th>
+                      <th>Fare</th>
+                    </tr>
+                  </thead>
+              
+                  <tbody>
+                    <tr>
+                      <td>Terminal to City Hall</td>
+                      <td>8:00 AM</td>
+                      <td>8:30 AM</td>
+                      <td>₱30</td>
+                    </tr>
+              
+                    <tr>
+                      <td>Terminal to University</td>
+                      <td>9:00 AM</td>
+                      <td>9:40 AM</td>
+                      <td>₱40</td>
+                    </tr>
+              
+                    <tr>
+                      <td>Terminal to Airport</td>
+                      <td>10:00 AM</td>
+                      <td>10:45 AM</td>
+                      <td>₱60</td>
+                    </tr>
+              
+                    <tr>
+                      <td>Terminal to Public Market</td>
+                      <td>11:00 AM</td>
+                      <td>11:25 AM</td>
+                      <td>₱25</td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+                <h3>Check Your Route</h3>
+              
+                <form method="get">
+                  <label for="route">Select a route:</label>
+              
+                  <select id="route" name="route">
+                    <option value="terminal-city-hall">Terminal to City Hall</option>
+                    <option value="terminal-university">Terminal to University</option>
+                    <option value="terminal-airport">Terminal to Airport</option>
+                    <option value="terminal-public-market">Terminal to Public Market</option>
+                  </select>
+              
+                  <button type="submit">Search</button>
+                </form>
+              
+                <hr>
+              </section>
+              <section id="contact">
+                <h2>Contact &amp; Feedback</h2>
+              
+                <form action="#" method="post" enctype="multipart/form-data">
+                  <fieldset>
+                    <legend>Send Feedback</legend>
+              
+                    <p>
+                      <label for="feedback-name">Your name:</label>
+                      <input type="text" id="feedback-name" name="feedback-name" required>
+                    </p>
+              
+                    <p>
+                      <label for="rating">Rate your ride (1-5):</label>
+                      <input type="range" id="rating" name="rating"
+                             min="1" max="5" value="5">
+                    </p>
+              
+                    <p>
+                      <label for="topic">Topic:</label>
+                      <select id="topic" name="topic">
+                        <option value="compliment">Compliment</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="lost-item">Lost item</option>
+                        <option value="suggestion">Suggestion</option>
+                      </select>
+                    </p>
+              
+                    <p>
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message"
+                                rows="6" cols="40" required></textarea>
+                    </p>
+              
+                    <p>
+                      <label for="photo">Attach a photo (optional):</label>
+                      <input type="file" id="photo" name="photo" accept="image/*">
+                    </p>
+              
+                    <p>
+                      <button type="submit">Send Feedback</button>
+                    </p>
+                  </fieldset>
+                </form>
+              
+                <h3>Reach Us</h3>
+              
+                <address>
+                  MoveMate Transport Services<br>
+                  Central Terminal, Quezon City, Philippines<br>
+                  Phone: <a href="tel:+639948819738">+63 9948819738</a><br>
+                  Email: <a href="mailto:info@movemate.com">info@movemate.com</a>
+                </address>
+              
+                <hr>
+              </section>
+              <section id="links">
+                <h2>Useful Links</h2>
+              
+                <ul>
+                  <li>
+                    <a href="https://www.google.com/maps"
+                       target="_blank"
+                       rel="noopener">
+                      OpenStreetMap
+                    </a>
+                  </li>
+              
+                  <li>
+                    <a href="https://www.openstreetmap.org/"
+                       target="_blank"
+                       rel="noopener">
+                      Google Maps
+                    </a>
+                  </li>
+              
+                  <li>
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener">
+                      Facebook
+                    </a>
+                  </li>
+              
+                  <li>
+                    <a href="#top">Back to top</a>
+                  </li>
+                </ul>
+              </section>
+              
+              <section id="terms-info">
+                <h2>Terms &amp; Conditions</h2>
+              
+                <details>
+                  <summary>Read the terms</summary>
+              
+                  <ol>
+                    <li>Passengers must provide accurate booking information.</li>
+                    <li>Passengers must follow the driver's safety instructions.</li>
+                    <li>Bookings may be cancelled or changed according to company policy.</li>
+                  </ol>
+                </details>
+              </section>
+              
+              </main>
+              
+              <footer>
+                <hr>
+                <p>&copy; 2026 MoveMate Transport Services. All rights reserved.</p>
+              </footer>
+        </main>
+    </body>
+
+</html>
